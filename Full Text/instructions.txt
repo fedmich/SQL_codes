@@ -1,0 +1,13 @@
+We need to do the following for better results on the Searching.
+
+* Edit C:\xampp\mysql\bin\my.ini and add the following on the mysqld section below
+# The MySQL server
+[mysqld]
+ft_min_word_len = 2
+
+* Restart MySQL service
+
+* Repair the tables that the full text indexes will be used on.
+
+This is to allow user to search with 3 characters only. example "Zoo" -> doesnt show much records.
+the default mysql fulltext minimum length is 4

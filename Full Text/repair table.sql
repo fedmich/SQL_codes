@@ -1,0 +1,1 @@
+REPAIR TABLE table_name QUICK;
