@@ -1,0 +1,12 @@
+CREATE TABLE `titles` (
+	`url` VARCHAR(255) NOT NULL,
+	`title` VARCHAR(255) NULL DEFAULT NULL,
+	`excerpt` TEXT NULL DEFAULT NULL,
+	`created` TIMESTAMP NOT NULL DEFAULT '',
+	`last_update` TIMESTAMP NOT NULL DEFAULT '',
+	`md5` TEXT NULL DEFAULT NULL,
+	PRIMARY KEY (`url`)
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+;
